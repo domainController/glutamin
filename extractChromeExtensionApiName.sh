@@ -13,18 +13,15 @@ chrome.runtime.send
 chrome.runtime.on
 chrome.storage.local.set
 chrome.storage.local.get
-kami@base43:~/Documents/staticAnalysis/ttt-ext$ sort bla | cat -n
-     1	chrome.notifications.create
-     2	chrome.runtime.get
-     3	chrome.runtime.get
-     4	chrome.runtime.on
-     5	chrome.runtime.on
-     6	chrome.runtime.open
-     7	chrome.runtime.send
-     8	chrome.storage.local.get
-     9	chrome.storage.local.get
-    10	chrome.storage.local.get
-    11	chrome.storage.local.set
-    12	chrome.storage.on
-    13	chrome.tabs.send
+kami@base43:~/Documents/staticAnalysis/ttt-ext$ sort bla | uniq -c | sort -r | cat -n
+     1	      3 chrome.storage.local.get
+     2	      2 chrome.runtime.on
+     3	      2 chrome.runtime.get
+     4	      1 chrome.tabs.send
+     5	      1 chrome.storage.on
+     6	      1 chrome.storage.local.set
+     7	      1 chrome.runtime.send
+     8	      1 chrome.runtime.open
+     9	      1 chrome.notifications.create
 kami@base43:~/Documents/staticAnalysis/ttt-ext$ 
+

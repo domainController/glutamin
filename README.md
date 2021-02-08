@@ -1,2 +1,2 @@
-# wordsObjects
-personal collecction of day-to-day scripts for text processing and data extraction
+# glutamin
+personal collection of day-to-day scripts and one-liners for text processing and data extraction
